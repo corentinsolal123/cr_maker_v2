@@ -1,5 +1,4 @@
-import { Link } from "@heroui/link";
-import { button as buttonStyles } from "@heroui/theme";
+import { button as buttonStyles, Link } from "@heroui/react";
 
 import { siteConfig } from "@/config/site";
 import { title } from "@/components/primitives";
