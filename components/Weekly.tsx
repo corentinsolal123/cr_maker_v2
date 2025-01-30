@@ -1,7 +1,9 @@
+"use client";
+
 import React, { useState } from "react";
-import { Input, Button, Spacer, Card } from "@heroui/react";
-import TaskList from "../../components/TaskList";
-import OpinionList from "../../components/OpinionList";
+import {Input, Button, Spacer, Card, Divider} from "@heroui/react";
+import TaskList from "@/components/Form/TaskList";
+import OpinionList from "@/components/Form/OpinionList";
 
 interface Opinion {
     opinionResult: "bad" | "average" | "good";
@@ -20,8 +22,10 @@ export const Weekly = () => {
 
     return (
         <div className="mt-8">
-            <h3>Rapport Hebdomadaire</h3>
-            <Spacer y={1} />
+            <div>
+                <h1>Daily reporting</h1>
+                <Divider className="my-4"/>
+            </div>
 
             <Input
                 id="nameInput"
@@ -33,26 +37,28 @@ export const Weekly = () => {
                 required
             />
 
-            <Spacer y={1} />
+            <Spacer y={1}/>
 
-            <TaskList tasks={tasks} setTasks={setTasks} />
-            <Spacer y={1} />
-            <OpinionList opinions={opinions} setOpinions={setOpinions} />
+            <TaskList tasks={tasks} setTasks={setTasks}/>
+            <Spacer y={1}/>
+            <OpinionList opinions={opinions} setOpinions={setOpinions}/>
 
-            <Spacer y={1} />
+            <Spacer y={1}/>
 
-            <Button color="success" onPress={() => {/* ... */}}>
+            <Button color="success" onPress={() => {/* ... */
+            }}>
                 Générer le récapitulatif
             </Button>
 
-            <Spacer y={1.5} />
+            <Spacer y={1.5}/>
 
             {summary && (
                 <Card>
                     <h4>Récapitulatif :</h4>
-                    <div dangerouslySetInnerHTML={{ __html: summary }}></div>
-                    <Spacer y={0.5} />
-                    <Button onPress={() => {/* ... */}}>Ouvrir dans Outlook</Button>
+                    <div dangerouslySetInnerHTML={{__html: summary}}></div>
+                    <Spacer y={0.5}/>
+                    <Button onPress={() => {/* ... */
+                    }}>Ouvrir dans Outlook</Button>
                 </Card>
             )}
         </div>

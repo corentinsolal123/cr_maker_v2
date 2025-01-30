@@ -6,11 +6,11 @@ export const siteConfig = {
   navItems: [
     {
       label: "Daily",
-      href: "/daily",
+      href: "/Form/Daily",
     },
     {
       label: "Weekly",
-      href: "/weekly",
+      href: "/Form/Weekly",
     },
   ],
   navMenuItems: [

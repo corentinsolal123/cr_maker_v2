@@ -17,7 +17,7 @@ import clsx from "clsx";
 
 import {siteConfig} from "@/config/site";
 import {ThemeSwitch} from "@/components/theme-switch";
-import {GithubIcon, SearchIcon, Logo} from "@/components/icons";
+import {GithubIcon, SearchIcon, Logo} from "@/components/Icons";
 
 const BRAND_NAME = "CR_Maker";
 
@@ -30,7 +30,6 @@ export const Navbar = () => {
                 input: "text-sm",
             }}
             endContent={
-                // Le raccourci clavier apparaît seulement sur écrans larges
                 <Kbd className="hidden lg:inline-block" keys={["command"]}>
                     K
                 </Kbd>
