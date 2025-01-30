@@ -1,6 +1,5 @@
 import React, { useState, FC, ChangeEvent } from "react";
-import { Card, CardBody, Input, Textarea } from "@heroui/react";
-import { Button } from "@heroui/button";
+import { Card, CardBody, Input, Textarea, Button } from "@heroui/react";
 import { MinusIcon, PlusIcon } from "@/components/Icons";
 
 interface DailyRowData {
