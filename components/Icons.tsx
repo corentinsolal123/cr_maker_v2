@@ -130,7 +130,7 @@ export const MinusIcon = ({
          width={size || width}
          {...props}
     >
-        <path d="M6 12L18 12" stroke="#000000" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"
+        <path d="M6 12L18 12" stroke="#000000" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round"
               fill="currentColor"
               fillRule="evenodd"
         />
