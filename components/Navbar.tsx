@@ -16,9 +16,9 @@ import {
 import NextLink from "next/link";
 import clsx from "clsx";
 
-import {siteConfig} from "@/config/site";
-import {ThemeSwitch} from "@/components/theme-switch";
-import {GithubIcon, SearchIcon, Logo} from "@/components/Icons";
+import {siteConfig} from "../config/site";
+import {ThemeSwitch} from "../components/theme-switch";
+import {GithubIcon, SearchIcon, Logo} from "../components/Icons";
 
 const BRAND_NAME = "CR_Maker";
 
@@ -97,7 +97,7 @@ export const Navbar = () => {
                         variant="flat"
                         as={Link}
                         // Exemple : "Nouveau compte-rendu" ou "/logout", etc.
-                        href="/nouveau-compte-rendu"
+                        href="/"
                     >
                         Nouveau CR
                     </Button>
